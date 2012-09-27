@@ -45,9 +45,19 @@
 			<div class="slides">
 				<section>
 					<h1>A Git Primer</h1>
-					<p>We'll be going over:</p>
+					<h5>by Roger Steve Ruiz</h5>
+					<p class="fragment">We'll be going over:</p>
 					<p class="fragment"><em>How to configure Git on your machine</em></p>
-					<p class="fragment"><em>A base Git workflow that will get you started.</em></p>
+					<p class="fragment"><em>A base Git workflow that will get you started:</em></p>
+					<ul>
+						<li class="fragment">cloning
+						<li class="fragment">pulling</li>
+						<li class="fragment">statusing</li>
+						<li class="fragment">adding</li>
+						<li class="fragment">committing</li>
+						<li class="fragment">pulling, again</li>
+						<li class="fragment">pushing</li>
+					</ul>
 				</section>
 
 				<section>
@@ -57,12 +67,12 @@
 						<p>A Basic Terminal Window</p>
 					</section>
 					<section>
-						<h2>For this primer we'll be using</h2>
+						<h2>And...</h2>
 						<img src="img/hands.jpg" alt="Hands">
 						<p>Your hands</p>
 					</section>
 					<section>
-						<h2>For this primer we'll be using</h2>
+						<h2>finally...</h2>
 						<img src="img/keyboard.jpg" alt="Keyboard">
 						<p>Your Keyboard</p>
 					</section>
@@ -119,10 +129,15 @@ Other
 				</section>
 
 				<section>
+					<h3>Looks pretty rough.</h3>
+					<img src="img/sad-dog.jpg" alt="Sad Dog">
+				</section>
+
+				<section>
 					<h3>Making Git aware of your name</h3>
 					<pre><code contenteditable>
 $ git config --global user.
-user.name        -- full name used for commits
+user.name       -- full name used for commits
 					</code></pre>
 					<img class="fragment" src="img/gitconfig-name.png" alt="Git Config User.Name">
 				</section>
@@ -137,36 +152,89 @@ user.email       -- email address used for commits
 				</section>
 
 				<section>
-					<h2>Why does this matter?</h2>
-					<p class="fragment">Your name and email address will be tied to each commit you do in Git</p>
-					<pre class="fragment">
-						<code contenteditable>
-$ git log
-						</code>
-					</pre>
-					<pre class="fragment"><code contenteditable>
-commit d49ac57e4edf85d30b2c679437725edd05ffb2bf
-Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
-Date:   Wed Sep 26 19:50:18 2012 -0400
-
-    Adding the thing that I removed
-
-commit a1e73b78ef6ec05599794e7cfd0b91bd7a10eb88
-Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
-Date:   Fri Sep 21 09:27:31 2012 -0400
-
-    Removing that thing that I added
-
-commit edb20515291544f847eab2691d554b5d19662c28
-Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
-Date:   Fri Sep 21 09:18:55 2012 -0400
-
-    Gangnam Style
+					<h3>Making Git aware of your ability to discern color</h3>
+					<pre><code contenteditable>
+$ git config --global user.
+color.ui       -- when to color if output is capable; most generic option, overriding by more specific ones
 					</code></pre>
+					<img class="fragment" src="img/gitconfig-color.png" alt="Git Config Color.UI">
+				</section>
+
+				<section>
+					<section>
+						<h2>Why does this matter?</h2>
+						<p class="fragment">Your name and email address will be tied to each commit you do in Git</p>
+						<pre class="fragment">
+							<code contenteditable>
+	$ git log
+							</code>
+						</pre>
+						<pre class="fragment"><code contenteditable>
+	commit d49ac57e4edf85d30b2c679437725edd05ffb2bf
+	Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
+	Date:   Wed Sep 26 19:50:18 2012 -0400
+
+	    Adding the thing that I removed
+
+	commit a1e73b78ef6ec05599794e7cfd0b91bd7a10eb88
+	Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
+	Date:   Fri Sep 21 09:27:31 2012 -0400
+
+	    Removing that thing that I added
+
+	commit edb20515291544f847eab2691d554b5d19662c28
+	Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
+	Date:   Fri Sep 21 09:18:55 2012 -0400
+
+	    Gangnam Style
+						</code></pre>
+					</section>
+					<section>
+						<h2>Why else does this matter?</h2>
+						<p class="fragment">Now with color.ui being active, you'll have colors!</p>
+
+					</section>
 				</section>
 				
-				<!-- <section></section> -->
-				
+				<section>
+					<h2>Okay so now that I'm all set up, now what?</h2>
+					<h1 class="fragment">Let's get into a workflow.</h1>
+				</section>
+
+				<section>
+					<h2>Cloning</h2>
+					<img src="img/git-clone.png" alt="Cloning a Rokkan Project">
+					<p class="fragment">Seriously, wherever you want it.</p>
+					<p class="fragment">I mean it.</p>
+					<p class="fragment">Anywhere you want.</p>
+					<p class="fragment">Just specify the folder.</p>
+				</section>
+
+				<section>
+					<h2>Pulling</h2>
+					<img src="img/git-pull.png" alt="Pulling a Project">
+					<pre class="fragment">
+						<code contenteditable>
+$ git pull origin master
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Now modify some files</h2>
+					<p class="fragment">(i.e. Work)</p>
+				</section>
+
+				<section>
+					<h2>Statusing</h2>
+					<img src="img/git-status.png" alt="Statusing a Project">
+					<pre class="fragment">
+						<code contenteditable>
+$ git status
+						</code>
+					</pre>
+				</section>
+
 				<section>
 					<h1>Thank You</h1>
 					<h3>BY Roger Steve Ruiz</h3>
