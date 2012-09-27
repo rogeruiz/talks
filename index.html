@@ -49,7 +49,7 @@
 					<p class="fragment">We'll be going over:</p>
 					<p class="fragment"><em>How to configure Git on your machine</em></p>
 					<p class="fragment"><em>A base Git workflow that will get you started:</em></p>
-					<!-- <ul>
+					<ul>
 						<li class="fragment">cloning</li>
 						<li class="fragment">pulling</li>
 						<li class="fragment">statusing</li>
@@ -57,7 +57,7 @@
 						<li class="fragment">committing</li>
 						<li class="fragment">pulling, again</li>
 						<li class="fragment">pushing</li>
-					</ul> -->
+					</ul>
 				</section>
 
 				<section>
@@ -204,10 +204,15 @@ color.ui       -- when to color if output is capable; most generic option, overr
 				<section>
 					<h2>Cloning</h2>
 					<img src="img/git-clone.png" alt="Cloning a Rokkan Project">
+					<pre class="fragment">
+						<code contenteditable>
+$ git clone git@lamp.rokkan.com:Client-Project.git /a/random/folder/Client-Project
+						</code>
+					</pre>
 					<p class="fragment">Seriously, wherever you want it.</p>
 					<p class="fragment">I mean it.</p>
 					<p class="fragment">Anywhere you want.</p>
-					<p class="fragment">Just specify the folder.</p>
+					<p class="fragment">Just specify the path and the folder name.</p>
 				</section>
 
 				<section>
@@ -250,7 +255,7 @@ $ git add .
 					<img src="img/git-commit.png" alt="Committing Files to a Project">
 					<pre class="fragment">
 						<code contenteditable>
-$ git commit -m "I have added a bunch of files to commit and I am committing all of them."
+$ git commit -m "I have added a bunch of files to commit &amp; I am committing all of them."
 						</code>
 					</pre>
 				</section>
@@ -280,12 +285,18 @@ $ git push origin master
 					<h2>REPEAT</h2>
 					<ul>
 						<li class="fragment">pulling</li>
+						<li class="fragment">working</li>
 						<li class="fragment">statusing</li>
 						<li class="fragment">adding</li>
+						<li class="fragment">statusing, again</li>
 						<li class="fragment">committing</li>
 						<li class="fragment">pulling, again</li>
 						<li class="fragment">pushing</li>
+						<li class="fragment">repeat</li>
 					</ul>
+					<h4 class="fragment">
+						<br><br>Keep in mind, this kind of workflow mimics an SVN workflow pretty closely. <br><br>Because you're pushing so often, you'll have your work on the remote repository as soon as you're done committing it. <br><br>There are other ways to work when it comes to Git and keep in mind that over time you'll develop you're own Git workflow.
+					</h4>
 				</section>
 
 				<section>
