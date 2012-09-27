@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>A Git Primer by Roger Steve Ruiz</title>
 
 		<meta name="description" content="A Git Introduction">
 		<meta name="author" content="Roger Steve Ruiz">
@@ -49,20 +49,20 @@
 					<p class="fragment">We'll be going over:</p>
 					<p class="fragment"><em>How to configure Git on your machine</em></p>
 					<p class="fragment"><em>A base Git workflow that will get you started:</em></p>
-					<ul>
-						<li class="fragment">cloning
+					<!-- <ul>
+						<li class="fragment">cloning</li>
 						<li class="fragment">pulling</li>
 						<li class="fragment">statusing</li>
 						<li class="fragment">adding</li>
 						<li class="fragment">committing</li>
 						<li class="fragment">pulling, again</li>
 						<li class="fragment">pushing</li>
-					</ul>
+					</ul> -->
 				</section>
 
 				<section>
 					<section>
-						<h2>For this primer we'll be using</h2>
+						<h2>For this primer, we'll be using</h2>
 						<img src="img/terminal-window.png" alt="Terminal Window">
 						<p>A Basic Terminal Window</p>
 					</section>
@@ -85,7 +85,7 @@
 				</section>
 
 				<section>
-					<h3>So how do I set something up like this?</h3>
+					<h3>So, how do I set up something like this?</h3>
 					<pre class="fragment"><code contenteditable>
 $ git config
 					</code></pre>
@@ -129,7 +129,7 @@ Other
 				</section>
 
 				<section>
-					<h3>Looks pretty rough.</h3>
+					<h3>Wow, that Looks pretty rough.</h3>
 					<img src="img/sad-dog.jpg" alt="Sad Dog">
 				</section>
 
@@ -152,7 +152,7 @@ user.email       -- email address used for commits
 				</section>
 
 				<section>
-					<h3>Making Git aware of your ability to discern color</h3>
+					<h3>Making Git aware of your <br>ability to discern color</h3>
 					<pre><code contenteditable>
 $ git config --global user.
 color.ui       -- when to color if output is capable; most generic option, overriding by more specific ones
@@ -191,13 +191,13 @@ color.ui       -- when to color if output is capable; most generic option, overr
 					</section>
 					<section>
 						<h2>Why else does this matter?</h2>
+						<img src="img/git-color.png" alt="Git Colors Difference">
 						<p class="fragment">Now with color.ui being active, you'll have colors!</p>
-
 					</section>
 				</section>
 				
 				<section>
-					<h2>Okay so now that I'm all set up, now what?</h2>
+					<h2>Okay. Now that I'm all set up, now what?</h2>
 					<h1 class="fragment">Let's get into a workflow.</h1>
 				</section>
 
@@ -233,6 +233,64 @@ $ git pull origin master
 $ git status
 						</code>
 					</pre>
+				</section>
+
+				<section>
+					<h2>Adding</h2>
+					<img src="img/git-add.png" alt="Adding Files to a Project">
+					<pre class="fragment">
+						<code contenteditable>
+$ git add .
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Committing</h2>
+					<img src="img/git-commit.png" alt="Committing Files to a Project">
+					<pre class="fragment">
+						<code contenteditable>
+$ git commit -m "I have added a bunch of files to commit and I am committing all of them."
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Pulling, again.</h2>
+					<img src="img/git-pull.png" alt="Pulling Again from a Repo">
+					<pre class="fragment">
+						<code contenteditable>
+$ git pull origin master
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>Pushing</h2>
+					<img src="img/git-push.png" alt="Pushing Files to a Project">
+					<pre class="fragment">
+						<code contenteditable>
+$ git push origin master
+						</code>
+					</pre>
+				</section>
+
+				<section>
+					<h2>And like it says on your shampoo,</h2>
+					<h2>REPEAT</h2>
+					<ul>
+						<li class="fragment">pulling</li>
+						<li class="fragment">statusing</li>
+						<li class="fragment">adding</li>
+						<li class="fragment">committing</li>
+						<li class="fragment">pulling, again</li>
+						<li class="fragment">pushing</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>And That's All Folks</h1>
+					<iframe width="420" height="315" src="http://www.youtube.com/embed/gBzJGckMYO4" frameborder="0" allowfullscreen></iframe>
 				</section>
 
 				<section>
