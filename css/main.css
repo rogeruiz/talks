@@ -842,7 +842,7 @@ body {
 	}
 
 	.reveal.overview .slides section.present {
-		background: rgba(0,0,0,0.3);
+		background: rgba(225,225,225,.2);
 	}
 .reveal.overview .slides>section.stack {
 	background: none;
