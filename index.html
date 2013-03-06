@@ -4,10 +4,10 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>A Git Primer by Roger Steve Ruiz</title>
+		<title>Beyond Media Queries by Brad Frost at Etsy Labs</title>
 
-		<meta name="description" content="A Git Introduction">
-		<meta name="author" content="Roger Steve Ruiz">
+		<meta name="description" content="Beyond Media Queries at Etsy Labs">
+		<meta name="author" content="Brad Frost">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -44,260 +44,376 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>A Git Primer</h1>
-					<h5>by Roger Steve Ruiz</h5>
-					<p class="fragment">We'll be going over:</p>
-					<p class="fragment"><em>How to configure Git on your machine</em></p>
-					<p class="fragment"><em>A base Git workflow that will get you started:</em></p>
-					<!-- <ul>
-						<li class="fragment">cloning</li>
-						<li class="fragment">pulling</li>
-						<li class="fragment">statusing</li>
-						<li class="fragment">adding</li>
-						<li class="fragment">committing</li>
-						<li class="fragment">pulling, again</li>
-						<li class="fragment">pushing</li>
-					</ul> -->
+					<h1>Generic Tradmarks</h1>
+					Comparing AJAX as a technology versus a term in the industry that helped move it forward.
+					Responsive Web Design
+					- Fluid Grid
+					- Flexible Media
+					- Media Queries
+
+					3 front-end techniques
+
+					That's it!
+
 				</section>
 
 				<section>
+					This lead to Responsive Cure All and Linament Miracle Tonic
+
+					People thought that RWD is all you need
+
+					Others were more skeptical
+				</section>
+
+				<section>
+					Responsive Layouts are just the tip of the iceberg
+					--- Front end technique
+
+					Feature Detection
+					RWD in
+					Per
+					apis for the device
+					content strategy
+					conditional loading
+					html5
+					touch
+					platform optimiz
+					ergonomics
+					--- All fundamental change
+				</section>
+
+				<section>
+					RWD is the term
+
+					Screw adaptive
+
+					RWD is the generic term for creating multi-device web experiences
+
+				</section>
+
+				<section>
+					Principles of adaptive design
+
+					ubiquity
+					flexibility
+					performance
+					enhancement
+					future friendly
+				</section>
+
+				<section>
+					<h3>Ubiquity</h3>
+					The web was a desktop
+
+					Now the web is everywhere
+
+					It's much larger and diverse than it used to be.
+
+					What is the web in the future????
+
+					Web tweeting refridgerator haha
+
+					Windsheild screen by Microsoft
+
+					????? <= what else is coming just a year from now??
+
+					<h2>The power of the web is its ubiquity!</h2>
+
+					"THIS IS FOR EVERYONE"
+
+					Stephanie Reiger "Diversity is not a bug, it is an opportunity"
+
+					People still look at the web on a mobile device as crippled
+
+					Mobile users will do anything and everything tht a desktop user will do.  It just needs to be presented in a diff way.
+
+					x One Web!
+					x Thematic Consistency!
+					√ GIVE THE PEOPLE WHAT THEY WANT!
+
 					<section>
-						<h2>For this primer, we'll be using</h2>
-						<img src="img/terminal-window.png" alt="Terminal Window">
-						<p>A Basic Terminal Window</p>
+						Does content parity trump all?
+						YES
+
+						Sometimes a desktop site on a mobile device makes sense.
+					</section>
+
+					<section>
+						CONTEXT
+
+						Quantitative vs Qualitative
+
+						"On The Go" is still TRUE
+
+						76% while waiting in line
+						86% watching TV
+						80% downtime
+						38% on the toilet
+					</section>
+
+					<section>
+						Mobile doesn't need to be on a pedestal
+					</section>
+
+				</section>
+
+
+				<section>
+					<h2>Flexibility</h2>
+
+					Specific device dimensions are madness. are nonsense.
+
+					The web is inheriently fluid.
+
+					ISH <= a tool by Frost which tests your site .
+
+					EMBRACE THE SUISHINESS.™ Brad Frost
+
+				</section>
+
+				<section>
+					<h2>Performance</h2>
+
+					71% mobile site should load as fast or faster than desktop
+
+					74% > 5 seconds people will leave
+
+					You have 5 seconds of someone's time.
+
+					1.3MB average webpage
+
+					86% responsive sites send the same content to small screen and large screen users
+
+					<section>
+						If your website is 15MB, it's not HTML5. it's bullshit
+						Christian Heilman
+					</section>
+
+					<section>
+						Even Obama's site is even too big
+					</section>
+
+					<section>
+						Performance is invisible
+						You can't mock it up in photoshop
+						You can't figure it out ahead of time.
+
+						Performance goes way too quickly into GEEKLAND.
+						WHY?
+
+						Performance isn't just a techinical BEST PRAC it's a design decision as well.
+
+						Facebook taught us that with the HTML5 versus Native made a big impression on people.
+
+						Good Performace is Good Design
+
+						Check out http://mobitest.akamai.com
+					</section>
+				</section>
+
+				<section>
+					Enhancement
+
+					RWD != One Size Fits All
+
+					Progressive Enhancement
+
+					Let's do Mobile First
+
+					What are the constraints there?
+
+					Fit your features on the smallest device and work up!
+
+					It's not about building LCD experiences, it's about starting there!
+
+					Use Modernizr!
+
+					<section>
+						Brief word about mobile web apps.
+
+						2013, nobody has JS disabled! ~ Plenty of Devs
+
+						JS Support isn't binary.
+
+						It's not that JS can fail, it's that it will. Think errors! 3rd party or your own!
+
+						Even Obama's site, because of the JS implemented navigation, failed.
+					</section>
+
+					<section>
+						There are instances where Prog Enhan doesn't work... 
+
+						Think Angry Birds as a text-based adventure.
+
+						Or Nike iD as a form instead of an interactive image.
+					</section>
+
+					<section>
+						Support and Optimization <= there is a difference!
+
+						Lower devices are just trying to get to the content.
+					</section>
+				</section>
+
+				<section>
+					<h2>Future Friendly</h2>
+
+					There is no such thing as being Future-Proof but we can be future friendly!
+
+					Think of Google Glass and how that came out of left-field.
+
+					<section>
+						Focus
+
+						We need to focus because if we don't as creators, our users will do it for themselves.
+
+						Instapaper, Bittorrent, Ad Blockr, TiVo
+					</section>
+
+					<section>
+						Make APIs not War
+
+						Invest in your content!
+
+						Don't just think of your site as a web publishing platform
+
+						Our content should be like water, it should be able to go to more places.
+					</section>
+
+					<section>
+						We don't know what will be going under the xmas tree. But that's the web in the future
+
+						What we're dealing with now is like bootcamp for tomorrow's insanity ~ Brad Frost
+					</section>
+				</section>
+
+				<section>
+					Some ideas from Frost on Multi Device Web Design
+
+					<section>
+						Navigation should be like a good friend. It should be there when you need them.
+
+						Navigation shouldn't be that annoying friend though.
+					</section>
+
+					<section>
+						Search form
+
+						Searching is really important on mobile.
+
+						Make sure to use the correct <input type="search"> element!
+					</section>
+
+					<section>
+						Product Info!
+
+						What is the user doing on the site?
+
+						79% of people use their mobile device in stores.
+
+					</section>
+
+					<section>
+						Product images?
+
+						Carousels!
+						Make sure you actually need one! <= seriously!
+							- Pull up some stats and publish those stats
+						Cycle through like-items.
+						Only load what you need! <= lazy load
+						BE EXPLICT WITH NAVIGATION
+							- pagination dots are insufficient.
+							- Brad's done enough user testing to know that people gloss over them.
+
+					</section>
+
+					<section>
+						Product Form
+
+						Use the correct <input type="number"> versus <input type="number" pattern="0-9">
+
+						This is basically what this comes down to.
+					</section>
+
+					<section>
+						Sharing Buttons
+
+						Social Count by filamint group.
+						Keep things snappy.
+						Lazy load your social icons.
+					</section>
+
+					<section>
+						Find nearby!
+
+						Geo-location
+
+						Getting information of things near the user
+
 					</section>
 					<section>
-						<h2>And...</h2>
-						<img src="img/hands.jpg" alt="Hands">
-						<p>Your hands</p>
+						Context!!!
+
+						Old Context!
+							- desktop users
+
+						New Context!
+							- Everything is connected.
+
 					</section>
+
 					<section>
-						<h2>finally...</h2>
-						<img src="img/keyboard.jpg" alt="Keyboard">
-						<p>Your Keyboard</p>
+						"Aggressive Enhancement" Prog Enhance
+
+						Design the experience to be lightweight and offload the different content
 					</section>
-				</section>
 
-				<section>
-					<h2>Configuring Git</h2>
-					<img src="img/gitconfig.png" alt="A Sample Git Config">
-					<p>A pretty decent .gitconfig file</p>
-				</section>
-
-				<section>
-					<h3>So, how do I set up something like this?</h3>
-					<pre class="fragment"><code contenteditable>
-$ git config
-					</code></pre>
-					<pre class="fragment">
-						<code>
-usage: git config [options]
-
-Config file location
-    --global              use global config file
-    --system              use system config file
-    --local               use repository config file
-    -f, --file &lt;file&gt;     use given config file
-
-Action
-    --get                 get value: name [value-regex]
-    --get-all             get all values: key [value-regex]
-    --get-regexp          get values for regexp: name-regex [value-regex]
-    --replace-all         replace all matching variables: name value [value_regex]
-    --add                 adds a new variable: name value
-    --unset               removes a variable: name [value-regex]
-    --unset-all           removes all matches: name [value-regex]
-    --rename-section      rename section: old-name new-name
-    --remove-section      remove a section: name
-    -l, --list            list all
-    -e, --edit            opens an editor
-    --get-color &lt;slot&gt;    find the color configured: [default]
-    --get-colorbool &lt;slot&gt;
-                          find the color setting: [stdout-is-tty]
-
-Type
-    --bool                value is "true" or "false"
-    --int                 value is decimal number
-    --bool-or-int         value is --bool or --int
-    --path                value is a path (file or directory name)
-
-Other
-    -z, --null            terminate values with NUL byte
-    --includes            respect include directives on lookup
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h3>Wow, that Looks pretty rough.</h3>
-					<img src="img/sad-dog.jpg" alt="Sad Dog">
-				</section>
-
-				<section>
-					<h3>Making Git aware of your name</h3>
-					<pre><code contenteditable>
-$ git config --global user.
-user.name       -- full name used for commits
-					</code></pre>
-					<img class="fragment" src="img/gitconfig-name.png" alt="Git Config User.Name">
-				</section>
-
-				<section>
-					<h3>Making Git aware of your email</h3>
-					<pre><code contenteditable>
-$ git config --global user.
-user.email       -- email address used for commits
-					</code></pre>
-					<img class="fragment" src="img/gitconfig-email.png" alt="Git Config User.Email">
-				</section>
-
-				<section>
-					<h3>Making Git aware of your <br>ability to discern color</h3>
-					<pre><code contenteditable>
-$ git config --global user.
-color.ui       -- when to color if output is capable; most generic option, overriding by more specific ones
-					</code></pre>
-					<img class="fragment" src="img/gitconfig-color.png" alt="Git Config Color.UI">
-				</section>
-
-				<section>
 					<section>
-						<h2>Why does this matter?</h2>
-						<p class="fragment">Your name and email address will be tied to each commit you do in Git</p>
-						<pre class="fragment">
-							<code contenteditable>
-	$ git log
-							</code>
-						</pre>
-						<pre class="fragment"><code contenteditable>
-	commit d49ac57e4edf85d30b2c679437725edd05ffb2bf
-	Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
-	Date:   Wed Sep 26 19:50:18 2012 -0400
+						Scrolling
 
-	    Adding the thing that I removed
+						3 use cases
 
-	commit a1e73b78ef6ec05599794e7cfd0b91bd7a10eb88
-	Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
-	Date:   Fri Sep 21 09:27:31 2012 -0400
+							- going back thru time
+							- through grouped items
+							- deep dive into content
 
-	    Removing that thing that I added
+						We're always scrolling down through a singular content type
 
-	commit edb20515291544f847eab2691d554b5d19662c28
-	Author: Roger Steve Ruiz &lt;roger.ruiz@rokkan.com&gt;
-	Date:   Fri Sep 21 09:18:55 2012 -0400
-
-	    Gangnam Style
-						</code></pre>
+						This is not a good user experience.
 					</section>
+
 					<section>
-						<h2>Why else does this matter?</h2>
-						<img src="img/git-color.png" alt="Git Colors Difference">
-						<p class="fragment">Now with color.ui being active, you'll have colors!</p>
+						footer navigation
+
+						it's not bad to be redundant.
+
+						It allows users to pivot. Same as back to top.
+
+						phone's make phone calls
+
+						<a href="tel:+555-5555">555-5555</a>
 					</section>
-				</section>
-				
-				<section>
-					<h2>Okay. Now that I'm all set up, now what?</h2>
-					<h1 class="fragment">Let's get into a workflow.</h1>
+
+					<section>
+						THIS STUFF IS HARD, BUT IT IS IMPORTANT.
+
+						When you're finished changing, you're finished ~ B Franklin.
+					</section>
+
 				</section>
 
 				<section>
-					<h2>Cloning</h2>
-					<img src="img/git-clone.png" alt="Cloning a Rokkan Project">
-					<p class="fragment">Seriously, wherever you want it.</p>
-					<p class="fragment">I mean it.</p>
-					<p class="fragment">Anywhere you want.</p>
-					<p class="fragment">Just specify the folder.</p>
+					6 billion worldwide mobile subs
+
+					It's a humbling stat
+					4.5 bill w/o web v 2.4 bill w/ web
+
+					What happens when 4.5 gets access?
+
+					We're living through not one but two of humanity's greatest achievements.
+					The web and mobile devices!
 				</section>
 
-				<section>
-					<h2>Pulling</h2>
-					<img src="img/git-pull.png" alt="Pulling a Project">
-					<pre class="fragment">
-						<code contenteditable>
-$ git pull origin master
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>Now modify some files</h2>
-					<p class="fragment">(i.e. Work)</p>
-				</section>
-
-				<section>
-					<h2>Statusing</h2>
-					<img src="img/git-status.png" alt="Statusing a Project">
-					<pre class="fragment">
-						<code contenteditable>
-$ git status
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>Adding</h2>
-					<img src="img/git-add.png" alt="Adding Files to a Project">
-					<pre class="fragment">
-						<code contenteditable>
-$ git add .
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>Committing</h2>
-					<img src="img/git-commit.png" alt="Committing Files to a Project">
-					<pre class="fragment">
-						<code contenteditable>
-$ git commit -m "I have added a bunch of files to commit and I am committing all of them."
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>Pulling, again.</h2>
-					<img src="img/git-pull.png" alt="Pulling Again from a Repo">
-					<pre class="fragment">
-						<code contenteditable>
-$ git pull origin master
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>Pushing</h2>
-					<img src="img/git-push.png" alt="Pushing Files to a Project">
-					<pre class="fragment">
-						<code contenteditable>
-$ git push origin master
-						</code>
-					</pre>
-				</section>
-
-				<section>
-					<h2>And like it says on your shampoo,</h2>
-					<h2>REPEAT</h2>
-					<ul>
-						<li class="fragment">pulling</li>
-						<li class="fragment">statusing</li>
-						<li class="fragment">adding</li>
-						<li class="fragment">committing</li>
-						<li class="fragment">pulling, again</li>
-						<li class="fragment">pushing</li>
-					</ul>
-				</section>
-
-				<section>
-					<h1>And That's All Folks</h1>
-					<iframe width="420" height="315" src="http://www.youtube.com/embed/gBzJGckMYO4" frameborder="0" allowfullscreen></iframe>
-				</section>
-
-				<section>
-					<h1>Thank You</h1>
-					<h3>BY Roger Steve Ruiz</h3>
-					<h4>Rokkan 2012</h4>
-				</section>
 			</div>
 
 			<!-- The navigational controls UI -->
