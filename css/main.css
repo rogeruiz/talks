@@ -61,7 +61,7 @@ body {
 
 @media screen and (max-width: 900px) {
 	body {
-		font-size: 30px;
+		font-size: 14px;
 	}
 }
 
@@ -407,8 +407,7 @@ body {
 	height: 60%;
 	left: 50%;
 	top: 50%;
-	/*margin-top: -320px;*/
-	margin-top: -520px;
+	margin-top: -320px;
 	padding: 20px 0px;
 	overflow: visible;
 	
